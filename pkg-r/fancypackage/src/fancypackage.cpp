@@ -7,4 +7,11 @@ RCPP_MODULE(fancy){
 
   function("fancy_increment" , &fancy_increment  , "documentation for fancy_increment ");
 
+  class_<FancyObject>("FancyObject")
+    .constructor()
+    .constructor<int,int>()
+
+    .method("random_increment", &FancyObject::random_increment , "increment by random number")
+
+    ;
 }
