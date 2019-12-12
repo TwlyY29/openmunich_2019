@@ -1,0 +1,12 @@
+Package: fancypackage
+Type: Package
+Title: What the Package Does in One 'Title Case' Line
+Version: 1.0
+Date: 2019-12-11
+Author: Mirco Schoenfeld
+Maintainer: Mirco Schoenfeld <twlyy29@gmail.com>
+Description: One paragraph description of what the package does as one
+        or more full sentences.
+License: GPL (>= 2)
+Imports: methods, Rcpp (>= 1.0.3)
+LinkingTo: Rcpp
