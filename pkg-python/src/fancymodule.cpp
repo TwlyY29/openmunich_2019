@@ -9,6 +9,8 @@ BOOST_PYTHON_MODULE(fancymodule)
   
   py::class_<FancyObject>("FancyObject", py::init<>())
     .def(py::init<int,int>())
+    .add_property("min", &FancyObject::get_min, &FancyObject::set_min)
+    .add_property("max", &FancyObject::get_max, &FancyObject::set_max)
     .def("random_increment", &FancyObject::random_increment);
 
 }
