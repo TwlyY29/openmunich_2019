@@ -6,6 +6,7 @@ using namespace Rcpp;
 RCPP_MODULE(fancy){
 
   function("fancy_increment" , &fancy_increment  , "documentation for fancy_increment ");
+  function("fancy_increment_container" , &fancy_increment_container  , "documentation for fancy_increment_container ");
 
   class_<FancyObject>("FancyObject")
     .constructor()

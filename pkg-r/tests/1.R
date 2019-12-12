@@ -37,3 +37,9 @@ test.properties <- function(){
 }
 
 
+test.container <- function() {
+  library(fancypackage)
+  n <- c(1,2,3)
+  inc <- fancy_increment_container(n)
+  checkTrue(all(inc>n))
+}
