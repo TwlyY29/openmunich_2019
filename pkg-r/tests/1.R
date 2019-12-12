@@ -26,5 +26,14 @@ test.custom_constructor <- function(){
 }
 
 
+test.properties <- function(){
+  library(fancypackage)
+  fo <- new(FancyObject,2,5)
+  fo$min <- 0
+  fo$max <- 1
+  n <- 3
+  inc <- fo$random_increment(n)
+  checkTrue(inc >= n & inc <= n+1)
+}
 
 

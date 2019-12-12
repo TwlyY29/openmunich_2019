@@ -13,5 +13,7 @@ RCPP_MODULE(fancy){
 
     .method("random_increment", &FancyObject::random_increment , "increment by random number")
 
+    .property("min", &FancyObject::get_min, &FancyObject::set_min)
+    .property("max", &FancyObject::get_max, &FancyObject::set_max)
     ;
 }
