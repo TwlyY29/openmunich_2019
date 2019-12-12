@@ -10,6 +10,14 @@ class TestCases(unittest.TestCase):
     i = fancy.fancy_increment(1)
     self.assertTrue(i >= 1)
 
+  def test_class(self):
+    import fancymodule.fancymodule as fancy
+    f = fancy.FancyObject()
+    i = f.random_increment(1)
+    self.assertTrue(i >= 1)
+    f2 = fancy.FancyObject(-2,2)
+    i2 = f2.random_increment(0)
+    self.assertTrue(i2 >= -2 and i2 <= 2)
 
 
   
