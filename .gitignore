@@ -1,0 +1,6 @@
+build/
+fancystuff
+*.o
+*.so
+*.tar.gz
+*.pyc
