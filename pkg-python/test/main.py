@@ -29,6 +29,13 @@ class TestCases(unittest.TestCase):
     i = f.random_increment(0)
     self.assertTrue(i >= -2 and i <= 2)
 
+  def test_container(self):
+    import fancymodule.fancymodule as fancy
+    numbers = fancy.IntList()
+    numbers[:] = [0,1,2,3,4]
+    fancy.fancy_increment_container(numbers)
+    for i,val in enumerate(numbers):
+      self.assertTrue( val>=i+1 and val<=i+10)
   
 if __name__=='__main__':
   unittest.main()
